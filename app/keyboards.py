@@ -8,7 +8,7 @@ from app.database.requests import get_categories, get_items
 main = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text='Каталог')],
                                      [KeyboardButton(text='Корзина')],
                                      [KeyboardButton(text='Поиск товара')],
-                                     [KeyboardButton(text='Контакты')]])
+                                     [KeyboardButton(text='Контакты')]], resize_keyboard=True)
 
 
 async def item_buttons(item_id):
